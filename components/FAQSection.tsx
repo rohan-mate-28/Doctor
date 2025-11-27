@@ -63,8 +63,11 @@ export default function FAQSection() {
     </section>
   );
 }
-
-function FAQItem({ question, answer }) {
+type FAQItemProps = {
+  question: string;
+  answer: string;
+};
+function FAQItem({ question, answer }:FAQItemProps) {
   const [open, setOpen] = useState(false);
 
   return (
