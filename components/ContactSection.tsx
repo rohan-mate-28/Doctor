@@ -71,7 +71,7 @@ export default function ContactSection() {
               />
               <textarea
                 placeholder="Your Message"
-                rows="4"
+                rows={4}
                 className="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-blue-500 outline-none"
               ></textarea>
 
@@ -93,7 +93,7 @@ export default function ContactSection() {
               width="100%"
               height="450"
               style={{ border: 0 }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
             ></iframe>
           </motion.div>
