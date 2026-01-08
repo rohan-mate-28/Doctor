@@ -1,38 +1,45 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Stethoscope, HeartPulse, Baby, Activity, Syringe, ShieldCheck } from "lucide-react";
+import {
+  Stethoscope,
+  HeartPulse,
+  Baby,
+  Activity,
+  Syringe,
+  ShieldCheck
+} from "lucide-react";
 
 const services = [
   {
     icon: <Stethoscope size={28} />,
-    title: "General Checkup",
-    desc: "Comprehensive health checkups for all age groups."
+    title: "General Consultation",
+    desc: "Complete medical consultation and treatment for common health issues."
   },
   {
     icon: <HeartPulse size={28} />,
-    title: "Diabetes & BP Care",
-    desc: "Regular monitoring and treatment for diabetes and blood pressure."
+    title: "Diabetes & Blood Pressure Care",
+    desc: "Regular monitoring, guidance, and treatment for diabetes and BP."
   },
   {
     icon: <Baby size={28} />,
-    title: "Child Care",
-    desc: "Gentle and trusted care for infants and children."
+    title: "Child & Elderly Care",
+    desc: "Dedicated healthcare services for children and senior citizens."
   },
   {
     icon: <Activity size={28} />,
-    title: "Fever & Infection",
-    desc: "Quick diagnosis and treatment for fever and infections."
+    title: "Fever, Cold & Infection",
+    desc: "Quick diagnosis and effective treatment for fever and infections."
   },
   {
     icon: <Syringe size={28} />,
-    title: "Vaccination",
-    desc: "Safe and timely vaccinations for all age groups."
+    title: "Vaccination Services",
+    desc: "Safe and timely vaccinations as per medical guidelines."
   },
   {
     icon: <ShieldCheck size={28} />,
-    title: "Preventive Care",
-    desc: "Health guidance to prevent future medical issues."
+    title: "Preventive Health Care",
+    desc: "Health advice and preventive care to maintain long-term wellness."
   }
 ];
 
@@ -53,7 +60,8 @@ export default function Services() {
             Our Medical Services
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Providing complete healthcare solutions with care, trust, and experience.
+            Comprehensive healthcare services provided with care, trust, and
+            medical expertise for all age groups.
           </p>
         </motion.div>
 
@@ -71,15 +79,22 @@ export default function Services() {
               <div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                 {service.icon}
               </div>
+
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
+
               <p className="text-gray-600">
                 {service.desc}
               </p>
             </motion.div>
           ))}
         </div>
+
+        {/* Soft Trust Line */}
+        <p className="text-center text-gray-600 mt-12">
+          ✔ Personalised care &nbsp; • &nbsp; ✔ Affordable consultation &nbsp; • &nbsp; ✔ Trusted by families
+        </p>
 
       </div>
     </section>

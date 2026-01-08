@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, CalendarCheck, Phone, MessageCircle } from "lucide-react";
+import { Clock, CalendarCheck, Phone, MessageCircle, MapPin } from "lucide-react";
 
 export default function TimingsAppointment() {
   return (
-    <section id="appointment" className="bg-gradient-to-br from-blue-50 to-white py-20">
+    <section
+      id="contact"
+      className="bg-gradient-to-br from-blue-50 to-white py-20"
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -19,7 +22,9 @@ export default function TimingsAppointment() {
           >
             <div className="flex items-center gap-3 mb-6">
               <Clock className="text-blue-600" size={28} />
-              <h3 className="text-2xl font-bold text-gray-900">Clinic Timings</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                Clinic Timings
+              </h3>
             </div>
 
             <ul className="space-y-4 text-gray-700">
@@ -29,7 +34,7 @@ export default function TimingsAppointment() {
               </li>
               <li className="flex justify-between border-b pb-2">
                 <span>Evening</span>
-                <span className="font-medium">5:00 PM – 9:00 PM</span>
+                <span className="font-medium">6:00 PM – 9:00 PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Sunday</span>
@@ -40,6 +45,11 @@ export default function TimingsAppointment() {
             <p className="mt-6 text-sm text-gray-500">
               * Emergency consultation available on call
             </p>
+
+            <div className="flex items-center gap-2 mt-4 text-gray-600 text-sm">
+              <MapPin size={16} />
+              XYZ Road, Area Name, Pune
+            </div>
           </motion.div>
 
           {/* Appointment CTA */}
@@ -55,22 +65,24 @@ export default function TimingsAppointment() {
             </span>
 
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Book Your Appointment Today
+              Book Your Visit Today
             </h3>
 
             <p className="text-gray-600 text-lg max-w-xl">
-              Avoid waiting time. Call or WhatsApp us to schedule your visit with our doctor.
+              Save time and avoid waiting. Call or WhatsApp us to schedule your
+              appointment with the doctor.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="tel:+919999999999"
+                href="tel:+919604795870"
                 className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
               >
                 <Phone size={18} /> Call Now
               </a>
+
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919604795870"
                 target="_blank"
                 className="flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-medium hover:bg-green-600 transition"
               >
